@@ -1,0 +1,108 @@
+.header {
+  overflow: hidden;
+  border-bottom: 1px solid #bebebeaa;
+
+  .tab-menu {
+    padding-left: 20px;
+    float: left;
+    overflow: hidden;
+
+    .item {
+      float: left;
+
+      .link {
+        position: relative;
+        display: block;
+        padding: 20px 30px;
+        color: #bebebe;
+        font: {
+          size: 20px;
+          weight: 600;
+        }
+
+        &.on {
+          color: #555555;
+        }
+
+        &.on:before {
+          content:'';
+          position: absolute;
+          display: block;
+          height: 2px;
+          width: 50%;
+          background-color: rgb(82, 85, 255);
+          border-radius: 0 0 3px 3px;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
+.message {
+  float: right;
+  height: 100%;
+
+  .link {
+    position: relative;
+    font-size: 22px;
+    color: #bebebe;
+    display: block;
+    margin: 18px 60px 18px 0;
+    padding: 0 30px;
+    border: {
+      left: 1px solid #dbdbdb;
+      right: 1px solid #dbdbdb;
+    };
+
+    &.on:after{
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ff2a2a;
+      top: 0px;
+      left: 46px;
+    }
+  }
+}
+
+.profile {
+  float: right;
+  overflow: hidden;
+  margin-top: 10px;
+  font-family: 'CookieRun_Regular', sans-serif;
+
+  &>div {
+    float: left;
+  }
+
+  .image {
+    margin-right: 20px;
+
+    img {
+      margin-top: 3px;
+      display: inline-block;
+      height: 45px;
+    }
+  }
+
+  .summary {
+    padding-right: 50px;
+
+    .name {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    
+    .email {
+      font-size: 15px;
+      color: #bebebe;
+    }
+  }
+}
+

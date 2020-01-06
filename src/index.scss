@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "CookieRun_Black";
+  src: url("https://rawcdn.githack.com/Hongjiseong/Fonts/e1f89dcb397ff39db36c9fb9450d2343a4e5ee53/CookieRun_Black.ttf");
+}
+@font-face {
+  font-family: "CookieRun_Bold";
+  src: url("https://rawcdn.githack.com/Hongjiseong/Fonts/e1f89dcb397ff39db36c9fb9450d2343a4e5ee53/CookieRun_Bold.ttf");
+}
+@font-face {
+  font-family: "CookieRun_Regular";
+  src: url("https://rawcdn.githack.com/Hongjiseong/Fonts/e1f89dcb397ff39db36c9fb9450d2343a4e5ee53/CookieRun_Regular.ttf");
+}
+
+@import './resources/scss/abstracts/variables';
+@import './resources/scss/abstracts/functions';
+@import './resources/scss/abstracts/mixins';
+@import './resources/scss/vendors/bootstrap';
+@import './resources/scss/vendors/jquery-ui';
+@import './resources/scss/base/reset';
+@import './resources/scss/base/typography';
+@import './resources/scss/layout/navigation';
+@import './resources/scss/layout/grid';
+@import './resources/scss/layout/header';
+@import './resources/scss/layout/footer';
+@import './resources/scss/layout/sidebar';
+@import './resources/scss/layout/forms';
+@import './resources/scss/components/buttons';
+@import './resources/scss/components/carousel';
+@import './resources/scss/components/checkbox';
+@import './resources/scss/components/slider';
+@import './resources/scss/pages/home';
+@import './resources/scss/pages/foodSlider';
+@import './resources/scss/pages/ingredient';
+@import './resources/scss/pages/cooking';
+@import './resources/scss/themes/theme';
+@import './resources/scss/themes/admin';

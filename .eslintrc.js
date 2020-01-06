@@ -1,0 +1,31 @@
+module.exports = {
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "react-app",
+        "airbnb"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "import", "jsx-a11y", "react", "react-hooks"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "comma-style": [2, "first"],
+        "comma-dangle": ["error", "never"],
+        "eol-last": 0,
+        "linebreak-style":["error", "never"]
+    }
+};

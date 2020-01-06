@@ -1,0 +1,97 @@
+#sidebar {
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  box-shadow: 0px 0px 3px 0px #bebebe;
+}
+
+// 펼치기
+#sidebar {
+  &.on {
+    width: 100vw;
+    transition: width 1.5s;
+    &+div {
+      display: none;
+    //   padding-left: 25vw;
+    //   transition: padding-left .5s;
+
+    //   .search-list .menu .sub-title {
+    //     margin-right: 25px;
+    //     transition: margin-right .5s;
+    //   }
+    //   .search-list .menu .search-bar input {
+    //     width: 120px;
+    //     transition: width .5s;
+    //   }
+    //   .status i {margin-right: 10px;}
+    //   .status i+span {display: none;}
+
+    //   .cooking {
+    //     .process {
+    //       border-right: none;
+    //     }
+    //     .process-detail {
+    //       display: none;
+    //     }
+    //   }
+    }
+  }
+}
+
+.side-menu {
+  display: inline-block;
+  height: 100%;
+  width: 80px;
+  z-index: 10;
+  border-right: 1px solid #dbdbdb;
+}
+.side-menu .item .link {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  color: #bebebe;
+  height: 55px;
+  line-height: 55px;
+  margin: {
+    top: 10px;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+  };
+
+  &.on{
+    color: rgb(82, 85, 255);
+  }
+  
+  &.on:after{
+    display: inline-block;content:'';
+    width: 3px;
+    height: 100%;
+    background-color: rgb(82, 85, 255);
+    position: absolute;
+    left: 0;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.side-detail {
+  position: absolute;
+  padding-left: 80px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  .side-detail-contents{
+    width: 100%;
+    height: 100%;
+    background-color: #bebebe;
+  }
+}
